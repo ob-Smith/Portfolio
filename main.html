@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oscar Bigno — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional: a tiny bit of SPA-specific polish without touching style.css -->
+  <style>
+    /* Keep spacing consistent across sections */
+    main.site-main { width: 100%; }
+    section.route-section { display: block; }
+    section.route-section[hidden] { display: none !important; }
+
+    /* Improve focus behavior when routing */
+    .route-focus-target:focus { outline: none; }
+  </style>
+</head>
+
+<body>
+  <!-- NAV (single source of truth) -->
+  <nav>
+    <div class="nav-toggle" id="navToggle" aria-label="Open navigation" tabindex="0" role="button" aria-expanded="false" aria-controls="navTabs">
+      <span></span><span></span><span></span>
+    </div>
+
+    <ul class="nav-tabs" id="navTabs">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <button id="themeToggle" class="button" type="button" aria-label="Toggle theme">
+  🌙
+</button>
+
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+<section id="home" class="route-section" data-route>
+  <h1 class="sr-only">Home</h1>
+
+  <section class="presentation route-focus-target" tabindex="-1" data-route-focus>
+
+    <div class="intro-text">
+      <p>Robotics & Mechatronics Engineer · Technical Sales</p>
+
+      <h2>
+        Engineering solutions<br>
+        that deliver results
+      </h2>
+
+      <h3>
+        Robotics Engineer with hands-on experience in technical sales, R&amp;D, and industrial systems
+      </h3>
+
+      <p>
+        I bring a hybrid profile combining <strong>robotics engineering, mechanical design, and customer-facing technical roles</strong>.
+        Currently based in <strong>Houston, TX</strong>, I support industrial clients by translating complex engineering constraints
+        into <strong>clear, executable, and commercially viable solutions</strong>.
+      </p>
+
+      <p>
+        My experience spans <strong>technical proposal development, equipment assembly and testing, after-sales support</strong>,
+        and <strong>R&amp;D project execution</strong>, with a proven ability to work across engineering, operations, and business teams.
+        I have contributed to <strong>30+ technical and commercial proposals</strong>, supported <strong>B2B outreach and trade exhibitions</strong>,
+        and delivered engineering work in <strong>international environments across North America, Europe, and South America</strong>.
+      </p>
+
+      <div class="project-links">
+        <a href="assets/resumes/resume-en.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Open Resume</a>
+        <a href="#experience" class="btn ">View Experience</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- Optional image -->
+    <img
+      src="assets/pictures/pp.jpg"
+      alt="Professional portrait"
+      class="profile-pic"
+      loading="lazy"
+    />
+
+  </section>
+</section>
+
+
+
+
+
+
+<!-- ABOUT -->
+<section id="about" class="route-section" data-route hidden>
+  <h1 class="sr-only">About Me</h1>
+
+  <section class="about-section route-focus-target" tabindex="-1" data-route-focus>
+    <h2 class="about-title">About Me</h2>
+
+    <p>
+      I am a <strong>Robotics Engineer with hands-on experience in technical sales, R&D, and international engineering environments</strong>.
+      My profile sits at the intersection of <strong>engineering execution, customer-facing problem solving, and business development</strong>,
+      with a strong ability to translate complex technical constraints into actionable solutions.
+    </p>
+
+    <p>
+      Currently based in <strong>Houston, Texas</strong>, I work as a <strong>Technical Sales Engineer</strong>, where I support industrial clients
+      from initial technical definition through proposal preparation, equipment assembly, and after-sales support.
+      In this role, I have contributed to <strong>dozens of technical and commercial proposals</strong>, supported <strong>B2B outreach and exhibitions</strong>,
+      and worked directly on <strong>assembly, testing, and maintenance of industrial equipment</strong>.
+      This experience has strengthened my ability to deliver under real-world constraints such as cost, lead time, safety, and performance.
+    </p>
+
+    <p>
+      My academic background includes a <strong>Master of Science in Robotics</strong> and a <strong>Master’s degree in Mechatronics Engineering</strong>,
+      complemented by international academic experiences in the <strong>UK, France, Colombia, and the Middle East</strong>.
+      Through these programs, I developed a solid foundation in <strong>robotics systems, mechanical design, control, data analysis, and systems integration</strong>,
+      reinforced by project-based work and applied research.
+    </p>
+
+    <p>
+      Beyond technical skills, I bring a <strong>strong execution mindset</strong>.
+      I am comfortable working in <strong>cross-functional and multicultural teams</strong>, communicating with engineers, managers, and customers alike,
+      and taking ownership of tasks from definition to delivery.
+      I value clarity, measurable impact, and continuous improvement, and I consistently aim to add value through both technical rigor and practical decision-making.
+    </p>
+
+    <p>
+      I am now looking to continue growing in a <strong>North American engineering environment</strong> where I can further develop my skills in
+      <strong>engineering, robotics, and business-facing technical roles</strong>, while contributing concretely to products, projects, and customer success.
+    </p>
+  </section>
+</section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="route-section" data-route hidden>
+      <h1 class="sr-only">Projects</h1>
+      <article class="project">
+  <div class="project-header">
+    <h3 class="project-title">Industrial Equipment Assembly & Testing</h3>
+    <div class="project-meta">
+      <span>Mechanical Systems · Quality · Operations</span>
+      <span>Houston, TX · 2025–2026</span>
+    </div>
+  </div>
+          <figure class="project-media">
+          <img src="https://i1.wp.com/www.maxairtech.com/wp-content/uploads/56-1-2-e1483728572399.png?fit=749%2C521&ssl=1" alt="CAD Render of the VTOL drone" itemprop="image" />
+          <figcaption>Vlave Assembly testing & deployment</figcaption>
+        </figure>
+
+  <div class="project-details">
+    <p class="project-summary">
+      Hands-on engineering work supporting the assembly, testing, and maintenance of industrial isolation equipment
+      in a commercial environment.
+    </p>
+
+    <h4>Key Contributions & Results</h4>
+    <ul>
+      <li>
+        Assembled and tested <strong>new and refurbished mechanical systems</strong> under operational constraints.
+      </li>
+      <li>
+        Supported <strong>after-sales service</strong> including seals and spare parts, improving turnaround time.
+      </li>
+      <li>
+        Provided <strong>engineering input</strong> during proposal and customer discussions to ensure feasibility.
+      </li>
+    </ul>
+
+    <h4>Engineering KPIs</h4>
+    <ul class="tech-list">
+      <li>30+ technical proposals supported</li>
+      <li>Hands-on assembly & testing</li>
+      <li>Direct customer impact</li>
+    </ul>
+
+    <p class="project-stats">
+      Key discussion point: translating <strong>engineering constraints into commercial decisions</strong>.
+    </p>
+  </div>
+</article>
+
+
+      <!-- Project 1 -->
+      <article class="project route-focus-target" tabindex="-1" data-route-focus aria-labelledby="project-title-vtol" data-project-id="vtol-drone" itemscope itemtype="https://schema.org/CreativeWork">
+        <header class="project-header">
+          <h2 id="project-title-vtol" class="project-title" itemprop="name">VTOL Drone</h2>
+          <p class="project-meta">
+            <time class="project-date" datetime="2024-01-01" itemprop="datePublished">Jan 2024 - Feb 2026</time>
+            <span class="project-role" itemprop="author">• Designer</span>
+            <span class="project-tags">• <span itemprop="keywords">Drone, Mechanical</span></span>
+          </p>
+          <p class="project-summary" itemprop="description">
+            Prototype Vertical Take-Off and Landing capable drone.
+          </p>
+        </header>
+
+        <figure class="project-media">
+          <img src="assets/pictures/VTOL_CAD.png" alt="CAD Render of the VTOL drone" itemprop="image" />
+          <figcaption>VTOL Drone CAD Assembly</figcaption>
+        </figure>
+
+        <section class="project-details">
+          <div class="project-overview">
+            <h4>Overview</h4>
+            <p>
+              Design and production of a VTOL drone that switches between quadcopter and fixed-wing modes.
+              Take-off and landing are handled vertically to broaden their location possibilities,
+              once airborne it transitions to plane mode for a more efficient cruise, higher speeds and extended range.
+              The first test flight is scheduled for December 2025.
+            </p>
+          </div>
+
+          <div class="project-features">
+            <h4>Key features / highlights</h4>
+            <ul>
+              <li>3m Wingspan</li>
+              <li>500g Payload</li>
+              <li>4.1kg total weight</li>
+            </ul>
+          </div>
+
+          <div class="project-tech">
+            <h4>Tech & tools</h4>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>PTC Creo</li>
+              <li>3D Printing</li>
+              <li>Carbon fiber</li>
+              <li>Pixhawk</li>
+              <li>Composite Design</li>
+            </ul>
+          </div>
+
+          <div class="project-role">
+            <h4>My role</h4>
+            <p>
+              Over the course of two years, I contributed to the design and development of the tail, nacelles, fuselage, assembly tools and much more for the VTOL drone.
+            </p>
+          </div>
+        </section>
+
+        <footer class="project-footer" aria-hidden="false">
+          <p class="project-stats">Duration: 2 years • Team: 10 • Status: Active</p>
+        </footer>
+      </article>
+      <article class="project">
+  <div class="project-header">
+    <h3 class="project-title">Weld-Shaving Robot — R&D Robotics Project</h3>
+    <div class="project-meta">
+      <span>Robotics · Mechanical Design · Controls</span>
+      <span>Team of 4 · 2023</span>
+    </div>
+  </div>
+        <figure class="project-media">
+          <img src="https://www.southern-specialties.com/wp-content/uploads/2020/02/weldrobot2-1024x683.jpg" alt="CAD Render of the VTOL drone" itemprop="image" />
+          <figcaption>Weld-Shaving Robot</figcaption>
+        </figure>
+
+  <div class="project-details">
+    <p class="project-summary">
+      Design and engineering of an automated robot for weld seam finishing, developed as a team-based R&D project
+      with focus on mechanical robustness, force control, and manufacturability.
+    </p>
+
+    <h4>Key Contributions & Results</h4>
+    <ul>
+      <li>
+        Designed the <strong>complete mechanical hull</strong> in Autodesk Inventor, optimised for stiffness,
+        accessibility, and component integration.
+      </li>
+      <li>
+        Defined <strong>force and load diagrams</strong> for tool–surface interaction, enabling consistent weld removal
+        without damaging base material.
+      </li>
+      <li>
+        Selected <strong>motors, actuators, and electronic components</strong> based on torque, speed, and duty-cycle constraints.
+      </li>
+      <li>
+        Reduced estimated tool vibration by <strong>~20%</strong> through structural layout and mass distribution choices.
+      </li>
+    </ul>
+
+    <h4>Engineering KPIs</h4>
+    <ul class="tech-list">
+      <li>±0.5 mm tool positioning tolerance</li>
+      <li>Continuous operation duty cycle &gt; 80%</li>
+      <li>4-person multidisciplinary collaboration</li>
+      <li>Design-to-prototype in &lt; 4 months</li>
+    </ul>
+
+    <p class="project-stats">
+      Key discussion point: balancing <strong>force control vs mechanical simplicity</strong> under industrial constraints.
+    </p>
+  </div>
+</article>
+
+
+      <!-- Project 2 -->
+      <article class="project" aria-labelledby="project-title-ttt" data-project-id="tic-tac-toe-robot" itemscope itemtype="https://schema.org/CreativeWork">
+        <header class="project-header">
+          <h2 id="project-title-ttt" class="project-title" itemprop="name">Tic-tac-toe Robot Opponent</h2>
+          <p class="project-meta">
+            <time class="project-date" datetime="2025-09-01" itemprop="datePublished">Fall Semester 2025</time>
+            <span class="project-role" itemprop="author">• Developer</span>
+            <span class="project-tags">• <span itemprop="keywords">Robotics, ROS2, Computer Vision</span></span>
+          </p>
+          <p class="project-summary" itemprop="description">
+            Tic tac toe Robot using an OpenMANIPULATOR-X robot arm as part of the "Motorisation et commande d'axe pour la robotique" course @ EIGSI La rochelle.
+          </p>
+        </header>
+
+        <figure class="project-media">
+          <img src="assets/pictures/OpenManipulator-X_CAD.png" alt="CAD render of the OpenMANIPULATOR-X assembly" itemprop="image" />
+          <figcaption>OpenMANIPULATOR-X CAD assembly</figcaption>
+        </figure>
+
+        <section class="project-details">
+          <div class="project-overview">
+            <h4>Overview</h4>
+            <p>
+              Created a ROS2 package enabling players to physically play Tic-Tac-Toe against an AI, whose moves are detected and executed by an OpenMANIPULATOR-X robot arm equipped with a camera.
+            </p>
+          </div>
+
+          <div class="project-features">
+            <h4>Key features / highlights</h4>
+            <ul>
+              <li>Move and game state detection</li>
+              <li>Robotic move execution</li>
+            </ul>
+          </div>
+
+          <div class="project-tech">
+            <h4>Tech & tools</h4>
+            <ul class="tech-list" aria-label="Technologies used">
+              <li>ROS2 Humble</li>
+              <li>Python</li>
+              <li>OpenCV</li>
+              <li>Raspberry Pi</li>
+            </ul>
+          </div>
+
+          <div class="project-role">
+            <h4>My role</h4>
+            <p>Designed and coded the project package and integrated vision + manipulation pipeline.</p>
+          </div>
+
+
+        </section>
+
+        <footer class="project-footer" aria-hidden="false">
+          <p class="project-stats">Duration: 3 months • Team: 3 • Status: Active</p>
+        </footer>
+      </article>
+
+      </article>
+    </section>
+
+    <!-- EDUCATION -->
+<section id="education" class="route-section" data-route hidden>
+  <h1 class="sr-only">Education</h1>
+
+  <section class="education-list route-focus-target" tabindex="-1" data-route-focus aria-label="Education background">
+
+    <!-- Heriot-Watt University -->
+    <article class="education-item">
+      <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Heriot-Watt_University_logo.svg/1280px-Heriot-Watt_University_logo.svg.png" alt="Etavis logo">
+      <div class="education-content">
+        <h3 class="degree">Master of Science — Robotics</h3>
+        <div class="meta">
+          <strong>Heriot-Watt University, United Kingdom</strong> · Sep 2023 – Aug 2024
+        </div>
+        <p>
+          Specialised MSc focused on robotics systems, control, and data-driven engineering approaches.
+        </p>
+        <ul>
+          <li>
+            Advanced coursework in <strong>robotics, control systems, and autonomous systems</strong>.
+          </li>
+          <li>
+            Applied robotics concepts through <strong>project-based learning</strong> and technical simulations.
+          </li>
+          <li>
+            Developed a strong understanding of the <strong>interaction between mechanics, electronics, and software</strong>.
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- EIGSI -->
+    <article class="education-item">
+      <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/LOGO-EIGSI-LR.jpg" alt="Etavis logo">
+      <div class="education-content">
+        <h3 class="degree">Master of General Engineering — Major in Mechatronics</h3>
+        <div class="meta">
+          <strong>EIGSI, France</strong> · 2019 – 2024
+        </div>
+        <p>
+          Five-year engineering degree covering multidisciplinary engineering fundamentals with a specialisation in mechatronics.
+        </p>
+        <ul>
+          <li>
+            Strong foundation in <strong>mechanical design, electronics, automation, and control systems</strong>.
+          </li>
+          <li>
+            Numerous <strong>team-based engineering projects</strong> combining theory and real-world applications.
+          </li>
+          <li>
+            Emphasis on <strong>systems engineering</strong> and cross-disciplinary problem solving.
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Escuela Colombiana de Ingeniería -->
+    <article class="education-item">
+      <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa_-_Universidad.webp/994px-Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa_-_Universidad.webp.png" alt="Etavis logo">
+      <div class="education-content">
+        <h3 class="degree">Exchange Semester — Robotics & Data Analysis</h3>
+        <div class="meta">
+          <strong>Escuela Colombiana de Ingeniería Julio Garavito, Colombia</strong> · Aug 2022 – Dec 2022
+        </div>
+        <p>
+          International exchange semester focused on applied robotics and data-driven engineering.
+        </p>
+        <ul>
+          <li>
+            Coursework in <strong>Robotics</strong> (kinematics, motion, manipulation).
+          </li>
+          <li>
+            Coursework in <strong>Data Analysis</strong>, including data processing and interpretation techniques.
+          </li>
+          <li>
+            Strengthened ability to work in a <strong>multicultural academic environment</strong>.
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- High School -->
+    <article class="education-item">
+      <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/LLM_Abu_Dhabi_Logo.png/1280px-LLM_Abu_Dhabi_Logo.png" alt="Etavis logo">
+      <div class="education-content">
+        <h3 class="degree">Scientific Baccalaureate — High Honours</h3>
+        <div class="meta">
+          <strong>Lycée Louis Massignon, Abu Dhabi, UAE</strong> · 2015 – 2019
+        </div>
+        <p>
+          French scientific high school diploma obtained with <strong>“Mention Très Bien”</strong> (highest distinction).
+        </p>
+        <ul>
+          <li>
+            Strong academic performance in <strong>mathematics, physics, and engineering sciences</strong>.
+          </li>
+          <li>
+            Developed early analytical and problem-solving skills.
+          </li>
+          <li>
+            International schooling experience in a <strong>multicultural environment</strong>.
+          </li>
+        </ul>
+      </div>
+    </article>
+
+  </section>
+</section>
+
+
+    <!-- EXPERIENCE -->
+<section id="experience" class="route-section" data-route hidden>
+  <h1 class="sr-only">Experience</h1>
+
+  <section class="experience-list route-focus-target" tabindex="-1" data-route-focus aria-label="Professional experience">
+
+    <!-- Technical Sales Engineer -->
+    <article class="experience-item">
+      <img class="company-logo" src="https://0db738c0.delivery.rocketcdn.me/wp-content/uploads/LogoONIS-PNG.png" alt="Onis logo">
+      <div class="experience-content">
+        <h3 class="role">Technical Sales Engineer</h3>
+        <div class="meta">
+          <strong>Houston, TX — USA</strong> · Feb 2025 – Feb 2026
+        </div>
+        <p>
+          Technical and commercial role at the intersection of engineering, sales, and operations for industrial isolation equipment.
+        </p>
+        <ul>
+          <li>
+            Prepared <strong>30+ technical & commercial proposals</strong> for industrial clients, combining engineering constraints, pricing strategy, and lead times.
+          </li>
+          <li>
+            Promoted proprietary line blind technology through <strong>B2B outreach, client meetings, and trade exhibitions</strong>, increasing market visibility in the US.
+          </li>
+          <li>
+            Assembled, maintained, and tested <strong>new and refurbished line blinds</strong>, ensuring compliance with operational and safety requirements.
+          </li>
+          <li>
+            Supported after-sales operations by managing <strong>seals, spare parts, and replacement components</strong>, improving response time and customer satisfaction.
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Engineer Intern -->
+    <article class="experience-item">
+      <img class="company-logo" src="https://images.seeklogo.com/logo-png/45/2/safran-logo-png_seeklogo-459538.png" alt="Safran logo">
+      <div class="experience-content">
+        <h3 class="role">Engineer Intern — Project Management</h3>
+        <div class="meta">
+          <strong>Paris — France</strong> · Jun 2023 – Sep 2023
+        </div>
+        <p>
+          Engineering project management role within the aerospace sector, focused on technical documentation and data consolidation.
+        </p>
+        <ul>
+          <li>
+            Updated and structured <strong>technical and financial datasheets</strong> for aircraft reactor catalogs used by engineering and commercial teams.
+          </li>
+          <li>
+            Conducted <strong>direct technical exchanges with General Electric (USA)</strong> to validate and process complex data sets.
+          </li>
+          <li>
+            Improved data reliability and usability across internal teams by standardising documentation formats.
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- R&D Project Engineer -->
+    <article class="experience-item">
+      <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Naval_Group_logo.svg/1280px-Naval_Group_logo.svg.png" alt="Naval logo">
+      <div class="experience-content">
+        <h3 class="role">R&D Project Engineer</h3>
+        <div class="meta">
+          <strong>La Rochelle — France</strong> · Feb 2023 – May 2023
+        </div>
+        <p>
+          Team-based R&D project focused on the design of an automated industrial robot.
+        </p>
+        <ul>
+          <li>
+            Designed a <strong>weld-shaving robot</strong> in a team of <strong>4 engineers</strong>, from concept to detailed mechanical architecture.
+          </li>
+          <li>
+            Led the <strong>CAD design of the robot hull</strong> using Autodesk Inventor.
+          </li>
+          <li>
+            Selected and validated <strong>electronic components</strong> according to performance and integration constraints.
+          </li>
+          <li>
+            Engineered the <strong>force and load diagrams</strong> to optimise component placement and structural integrity.
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- R&D Project Intern -->
+    <article class="experience-item">
+      <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/en/5/54/TotalEnergies_logo.svg" alt="total logo">
+      <div class="experience-content">
+        <h3 class="role">R&D Project Intern</h3>
+        <div class="meta">
+          <strong>Pau — France</strong> · Jul 2022
+        </div>
+        <p>
+          Research-oriented internship focused on robotics applications in the energy sector.
+        </p>
+        <ul>
+          <li>
+            Conducted a <strong>market analysis of robotic systems</strong> used for Oil & Gas operations.
+          </li>
+          <li>
+            Delivered a <strong>40-page structured research report</strong> synthesising technical solutions, use cases, and market positioning.
+          </li>
+          <li>
+            Provided decision-support material for future R&D and investment considerations.
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Event Coordinator -->
+    <article class="experience-item">
+      <img class="company-logo" src="https://www.fronteracelta.com/wp-content/uploads/2025/12/logo-FRONTERA-CELTArasgado.png" alt="frontera logo">
+      <div class="experience-content">
+        <h3 class="role">Event Coordinator</h3>
+        <div class="meta">
+          <strong>León — Spain</strong> · Jul 2021
+        </div>
+        <p>
+          Operational and organisational role within a recreational sports environment.
+        </p>
+        <ul>
+          <li>
+            Organised and coordinated <strong>outdoor activities (paintball, forest games)</strong> for both adults and children.
+          </li>
+          <li>
+            Ensured <strong>maintenance and availability of sports facilities and equipment</strong>, guaranteeing safety and operational readiness.
+          </li>
+          <li>
+            Managed logistics and on-site coordination during high-attendance events.
+          </li>
+        </ul>
+      </div>
+    </article>
+
+  </section>
+</section>
+
+    <!-- RESUME -->
+    <section id="resume" class="route-section" data-route hidden>
+      <h1 class="sr-only">Resume</h1>
+
+      <section class="resume-viewer route-focus-target" tabindex="-1" data-route-focus>
+        <div class="viewer-controls" style="margin:1rem 0; display:flex; flex-wrap:wrap; gap:0.5rem; align-items:center;">
+          <div class="lang-select" style="display:flex; gap:0.5rem; align-items:center;">
+            <span style="font-weight:600;">Language:</span>
+            <button class="lang-btn button" data-lang="en" type="button">English</button>
+            <button class="lang-btn button" data-lang="fr" type="button">Français</button>
+            <button class="lang-btn button" data-lang="de" type="button">Deutsch</button>
+          </div>
+          <div style="margin-left:auto;">
+            <a id="downloadLink" href="assets/resumes/resume-en.pdf" download="Oscar-Bigno-Resume-en.pdf" class="button">Download PDF</a>
+            <a id="openLink" href="assets/resumes/resume-en.pdf" target="_blank" rel="noopener noreferrer" class="button" style="margin-left:0.5rem;">Open in new tab</a>
+          </div>
+        </div>
+
+        <div class="pdf-embed" style="width:100%;max-width:1000px;margin:0 auto;">
+          <iframe id="resumeIframe" src="assets/resumes/resume-en.pdf" title="Resume PDF" style="width:100%;height:120vh;border:1px solid #ddd;" frameborder="0">
+            <p>Your browser does not support PDFs. Download the PDF to view it: <a id="fallbackDownload" href="assets/resumes/resume-en.pdf">Download PDF</a>.</p>
+          </iframe>
+        </div>
+      </section>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="route-section" data-route hidden>
+      <h1 class="sr-only">Contact</h1>
+
+      <!-- Keep your contact-page scoping by applying the same class to this wrapper -->
+      <div class="contact-page">
+        <div class="page-content route-focus-target" tabindex="-1" data-route-focus>
+          <div class="contact-sections">
+            <section class="contact-info-section">
+              <h2>Contact Information</h2>
+              <div class="contact-grid">
+                <div class="contact-card">
+                  <a href="tel:+33638404718" aria-label="Call phone number">
+                    <div class="card-icon">
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.01l-2.21 2.21z"/></svg>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <a class="card-link" href="tel:+33638404718">+33 6 38 40 47 18</a>
+                    <div class="card-label">Phone</div>
+                  </div>
+                </div>
+
+                <div class="contact-card">
+                  <a href="mailto:Oscar.Bigno@gmail.com" aria-label="Send email">
+                    <div class="card-icon">
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <a class="card-link" href="mailto:Oscar.Bigno@gmail.com">Oscar.Bigno@gmail.com</a>
+                    <div class="card-label">Email</div>
+                  </div>
+                </div>
+
+                <div class="contact-card">
+                  <a href="https://github.com/aBigno" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub profile">
+                    <div class="card-icon">
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <a class="card-link" href="https://github.com/aBigno" target="_blank" rel="noopener noreferrer">github.com/aBigno</a>
+                    <div class="card-label">GitHub</div>
+                  </div>
+                </div>
+
+                <div class="contact-card">
+                  <a href="https://www.linkedin.com/in/oscar-smith-bigno-3668a71a4/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+                    <div class="card-icon">
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <a class="card-link" href="https://www.linkedin.com/in/oscar-smith-bigno-3668a71a4/" target="_blank" rel="noopener noreferrer">linkedin.com/in/Oscar-Bigno-ba664b207</a>
+                    <div class="card-label">LinkedIn</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="contact-form-section">
+              <h2>Contact Form</h2>
+              <form class="contact-form" id="contactForm" action="https://formspree.io/f/mwvvkjjl" method="POST">
+                <input type="text" name="_gotcha" id="_gotcha" style="display:none;" tabindex="-1" autocomplete="off" />
+                <input type="hidden" name="_subject" value="Website contact form submission" />
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+
+                <div id="formStatus" class="form-status" role="status" aria-live="polite" style="margin-top:1rem"></div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (single source of truth) -->
+  <footer class="site-footer">
+    <p>© 2025 Oscar Bigno &mdash; Mechatronics Engineer</p>
+    <p>
+      <a href="#home" class="footer-link" aria-label="Go to Home">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        <span class="footer-link-text">Home</span>
+      </a> |
+      <a href="https://github.com/aBigno" target="_blank" rel="noopener noreferrer" class="footer-link">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85.004 1.71.12 2.51.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+        <span class="footer-link-text">GitHub</span>
+      </a> |
+      <a href="https://www.linkedin.com/in/oscar-smith-bigno-3668a71a4/" target="_blank" rel="noopener noreferrer" class="footer-link">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
+        <span class="footer-link-text">LinkedIn</span>
+      </a> |
+      <a href="#contact" class="footer-link">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle;"><path d="M21 6.5a2.5 2.5 0 0 0-2.5-2.5h-13A2.5 2.5 0 0 0 3 6.5v11A2.5 2.5 0 0 0 5.5 20h13a2.5 2.5 0 0 0 2.5-2.5v-11zm-2.5-.5a.5.5 0 0 1 .5.5v.379l-8 5.333-8-5.333V6a.5.5 0 0 1 .5-.5h15zm.5 12a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V8.121l7.5 5 7.5-5V18z"/></svg>
+        <span class="footer-link-text">Contact</span>
+      </a>
+    </p>
+  </footer>
+
+  <script>
+    /***********************
+     * 1) Mobile nav toggle
+     ***********************/
+    (function () {
+      const navToggle = document.getElementById('navToggle');
+      const navTabs = document.getElementById('navTabs');
+      if (!navToggle || !navTabs) return;
+
+      function setMenu(open) {
+        navTabs.classList.toggle('open', open);
+        navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (window.innerWidth <= 700) {
+          document.body.classList.toggle('menu-open', open);
+        }
+      }
+
+      navToggle.addEventListener('click', () => setMenu(!navTabs.classList.contains('open')));
+      navToggle.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') setMenu(!navTabs.classList.contains('open'));
+      });
+
+      // Close menu on click (mobile UX)
+      navTabs.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          if (window.innerWidth <= 700) setMenu(false);
+        });
+      });
+
+      // Close menu if resizing up to desktop
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 700) setMenu(false);
+      });
+    })();
+
+    /***********************
+     * 2) Hash routing
+     ***********************/
+    (function () {
+      const sections = Array.from(document.querySelectorAll('[data-route]'));
+      const links = Array.from(document.querySelectorAll('#navTabs a'));
+      const DEFAULT_ROUTE = 'home';
+
+      function normalizeRoute(hash) {
+        const route = (hash || '').replace('#', '').trim();
+        return route || DEFAULT_ROUTE;
+      }
+
+      function showRoute(route) {
+  const exists = sections.some(s => s.id === route);
+  const safeRoute = exists ? route : DEFAULT_ROUTE;
+
+  const current = sections.find(s => !s.hidden);
+  const next = document.getElementById(safeRoute);
+
+  // If already on the route, do nothing
+  if (current && next && current.id === next.id) return;
+
+  // Mark active link state
+  links.forEach(a => {
+    const isActive = a.getAttribute('href') === `#${safeRoute}`;
+    a.classList.toggle('active', isActive);
+    if (isActive) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
+  });
+
+  // Animate current out
+  if (current) {
+    current.classList.add('is-leaving');
+  }
+
+  // Prepare next
+  if (next) {
+    next.hidden = false;
+    next.classList.add('is-entering');
+  }
+
+  // After a frame: animate next in
+  requestAnimationFrame(() => {
+    if (next) next.classList.remove('is-entering');
+  });
+
+  // After transition: hide old
+  const TRANS_MS = 230;
+  window.setTimeout(() => {
+    sections.forEach(section => {
+      if (section.id !== safeRoute) {
+        section.hidden = true;
+        section.classList.remove('is-leaving');
+      }
+    });
+
+    // Focus + scroll
+    const focusTarget = next?.querySelector('[data-route-focus]');
+    if (focusTarget) focusTarget.focus({ preventScroll: true });
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, TRANS_MS);
+}
+
+
+      function handleRoute() {
+        showRoute(normalizeRoute(location.hash));
+      }
+
+      window.addEventListener('hashchange', handleRoute);
+      window.addEventListener('DOMContentLoaded', () => {
+        // Ensure an initial hash exists for copy/paste / refresh stability
+        if (!location.hash) history.replaceState(null, '', `#${DEFAULT_ROUTE}`);
+        handleRoute();
+      });
+    })();
+
+    /***********************
+     * 3) Resume language switcher
+     ***********************/
+    (function () {
+      const buttons = document.querySelectorAll('.lang-btn');
+      const iframe = document.getElementById('resumeIframe');
+      const downloadLink = document.getElementById('downloadLink');
+      const openLink = document.getElementById('openLink');
+      const fallbackDownload = document.getElementById('fallbackDownload');
+
+      if (!buttons.length || !iframe || !downloadLink || !openLink) return;
+
+      const filenames = {
+        en: 'assets/resumes/resume-en.pdf',
+        fr: 'assets/resumes/resume-fr.pdf',
+        de: 'assets/resumes/resume-de.pdf'
+      };
+
+      function setLang(lang) {
+        const file = filenames[lang] || filenames.en;
+        iframe.src = file;
+        downloadLink.href = file;
+        openLink.href = file;
+        downloadLink.setAttribute('download', `Oscar-Bigno-Resume-${lang}.pdf`);
+        if (fallbackDownload) fallbackDownload.setAttribute('href', file);
+
+        buttons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+      }
+
+      buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+
+      // Default to English
+      setLang('en');
+    })();
+
+    /***********************
+     * 4) Contact form (Formspree) AJAX submit
+     ***********************/
+    (function () {
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('formStatus');
+      if (!form || !status) return;
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const gotcha = form.querySelector('[name="_gotcha"]')?.value || '';
+        if (gotcha) {
+          status.textContent = 'Submission blocked.';
+          return;
+        }
+
+        const submitBtn = form.querySelector('button[type="submit"]');
+        if (submitBtn) submitBtn.disabled = true;
+        status.style.color = '';
+        status.textContent = 'Sending...';
+
+        try {
+          const formData = new FormData(form);
+          const res = await fetch(form.action, {
+            method: form.method,
+            headers: { 'Accept': 'application/json' },
+            body: formData
+          });
+
+          if (res.ok) {
+            form.reset();
+            status.style.color = 'green';
+            status.textContent = 'Message sent — thank you!';
+          } else {
+            const data = await res.json().catch(() => ({}));
+            status.style.color = 'crimson';
+            status.textContent = data.error || 'There was an error sending your message.';
+          }
+        } catch {
+          status.style.color = 'crimson';
+          status.textContent = 'Network error. Please try again later.';
+        } finally {
+          if (submitBtn) submitBtn.disabled = false;
+        }
+      });
+    })();
+
+    /***********************
+ * Theme toggle (system default + localStorage)
+ ***********************/
+(function () {
+  const root = document.documentElement; // <html>
+  const btn = document.getElementById('themeToggle');
+  if (!btn) return;
+
+  const STORAGE_KEY = 'theme'; // 'light' | 'dark'
+
+  function setTheme(theme) {
+    root.dataset.theme = theme;
+    btn.textContent = theme === 'light' ? '☀️' : '🌙';
+    btn.setAttribute('aria-label', `Switch to ${theme === 'light' ? 'dark' : 'light'} mode`);
+  }
+
+  // Pick initial theme: saved > system > dark
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved === 'light' || saved === 'dark') {
+    setTheme(saved);
+  } else {
+    const systemPrefersLight = window.matchMedia?.('(prefers-color-scheme: light)')?.matches;
+    setTheme(systemPrefersLight ? 'light' : 'dark');
+  }
+
+  btn.addEventListener('click', () => {
+    const next = root.dataset.theme === 'light' ? 'dark' : 'light';
+    setTheme(next);
+    localStorage.setItem(STORAGE_KEY, next);
+  });
+})();
+
+  </script>
+</body>
+</html>
