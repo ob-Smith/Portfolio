@@ -849,3 +849,130 @@ footer.site-footer a:hover {
    14) Small helpers
    --------------------------- */
 code, pre { font-family: var(--mono); color: var(--text); }
+
+/* ===========================
+   Navbar: desktop vs mobile
+   =========================== */
+
+.site-nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 1000;
+  height: 64px;
+  padding: 0 var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: color-mix(in srgb, var(--bg0) 90%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Nav links (desktop default) */
+.nav-tabs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+  padding: 8px;
+  margin: 0;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Burger hidden on desktop */
+.nav-toggle {
+  display: none;
+}
+
+/* Theme toggle position */
+#themeToggle {
+  position: absolute;
+  right: var(--gutter);
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 14px;
+}
+
+/* ---------------------------
+   MOBILE MODE
+   --------------------------- */
+@media (max-width: 700px) {
+
+  /* Burger visible */
+  .nav-toggle {
+    display: flex;
+    position: absolute;
+    left: var(--gutter);
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: var(--shadow-soft);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    margin: 3px 0;
+    border-radius: 2px;
+    background: var(--text);
+    opacity: 0.9;
+  }
+
+  /* Hide nav links by default */
+  .nav-tabs {
+    position: absolute;
+    top: 64px;
+    left: var(--gutter);
+    right: var(--gutter);
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+
+    padding: 12px;
+    border-radius: var(--radius-lg);
+
+    background: color-mix(in srgb, var(--bg0) 94%, transparent);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: max-height 220ms ease, opacity 180ms ease;
+  }
+
+  /* Open state */
+  .nav-tabs.open {
+    max-height: 520px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-tabs a {
+    padding: 12px 14px;
+    border-radius: 12px;
+    justify-content: flex-start;
+  }
+
+  /* Theme toggle on the right */
+  #themeToggle {
+    top: 10px;
+    right: var(--gutter);
+  }
+}
