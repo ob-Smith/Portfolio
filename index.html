@@ -19,26 +19,37 @@
 </head>
 
 <body>
-  <!-- NAV (single source of truth) -->
-  <nav>
-    <div class="nav-toggle" id="navToggle" aria-label="Open navigation" tabindex="0" role="button" aria-expanded="false" aria-controls="navTabs">
-      <span></span><span></span><span></span>
-    </div>
+<nav class="site-nav">
+  <!-- Burger (mobile only) -->
+  <button
+    class="nav-toggle"
+    id="navToggle"
+    aria-label="Open navigation"
+    aria-expanded="false"
+    type="button"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    <ul class="nav-tabs" id="navTabs">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <button id="themeToggle" class="button" type="button" aria-label="Toggle theme">
-  🌙
-</button>
+  <!-- Nav links -->
+  <ul class="nav-tabs" id="navTabs">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 
-    </ul>
-  </nav>
+  <!-- Theme toggle -->
+  <button id="themeToggle" class="button" type="button" aria-label="Toggle theme">
+    🌙
+  </button>
+</nav>
+
 
   <!-- HOME -->
 <section id="home" class="route-section" data-route>
@@ -975,7 +986,6 @@
     localStorage.setItem(STORAGE_KEY, next);
   });
 })();
-
   </script>
 </body>
 </html>
