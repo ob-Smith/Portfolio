@@ -294,7 +294,7 @@
   </section>
 
   <footer class="project-footer" aria-hidden="false">
-    <p class="project-stats">Duration: 5 months • Team: 4 • Status: Prototype</p>
+    <p class="project-stats">Duration: 5 months • Team: 4 • Status: Completed</p>
   </footer>
 </article>
       
@@ -374,70 +374,85 @@
       </section>
     
       <footer class="project-footer" aria-hidden="false">
-        <p class="project-stats">Duration: 2 months • Status: Prototype • Date: Nov 2023</p>
+        <p class="project-stats">Duration: 2 months • Status: Completed • Date: Nov 2023</p>
       </footer>
     
       </article>
       <!-- Project 4 COMPLIANT ROBOT  -->
-      <article class="project" aria-labelledby="project-title-ttt" data-project-id="tic-tac-toe-robot" itemscope itemtype="https://schema.org/CreativeWork">
-        <header class="project-header">
-          <h2 id="project-title-ttt" class="project-title" itemprop="name">Tic-tac-toe Robot Opponent</h2>
-          <p class="project-meta">
-            <time class="project-date" datetime="2025-09-01" itemprop="datePublished">Fall Semester 2025</time>
-            <span class="project-role" itemprop="author">• Developer</span>
-            <span class="project-tags">• <span itemprop="keywords">Robotics, ROS2, Computer Vision</span></span>
-          </p>
-          <p class="project-summary" itemprop="description">
-            Tic tac toe Robot using an OpenMANIPULATOR-X robot arm as part of the "Motorisation et commande d'axe pour la robotique" course @ EIGSI La rochelle.
-          </p>
-        </header>
+<article class="project route-focus-target" tabindex="-1" data-route-focus aria-labelledby="project-title-dissertation" data-project-id="msc-dissertation-manipulator" itemscope itemtype="https://schema.org/CreativeWork">
+  <header class="project-header">
+    <h2 id="project-title-dissertation" class="project-title" itemprop="name">MSc Dissertation — Compliant Spatial Parallel Manipulator</h2>
+    <p class="project-meta">
+      <time class="project-date" datetime="2024-08-01" itemprop="datePublished">May 2024 - Aug 2024</time>
+      <span class="project-role" itemprop="author">• Researcher & Designer</span>
+      <span class="project-tags">• <span itemprop="keywords">Robotics, Compliant Mechanisms, FEA, CAD, 3D Printing</span></span>
+    </p>
+    <p class="project-summary" itemprop="description">
+      MSc Robotics dissertation on the development of a compliant 3RRRR spatial parallel manipulator using flexure-based CORE joints, FEA-driven design, and experimental validation.
+    </p>
+  </header>
 
-        <figure class="project-media">
-          <video controls muted playsinline width="100%">
-            <source src="assets/pictures/mecatrobot.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <figcaption>Project Presentation Video</figcaption>
-        </figure>
-        
-        <section class="project-details">
-          <div class="project-overview">
-            <h4>Overview</h4>
-            <p>
-              Created a ROS2 package enabling players to physically play Tic-Tac-Toe against an AI, whose moves are detected and executed by an OpenMANIPULATOR-X robot arm equipped with a camera.
-            </p>
-          </div>
+  <figure class="project-media">
+    <img src="assets/pictures/compliant_parallel_manipulator.jpeg" alt="Prototype of the compliant spatial parallel manipulator" itemprop="image" />
+    <figcaption>Compliant spatial parallel manipulator developed for MSc dissertation</figcaption>
+  </figure>
 
-          <div class="project-features">
-            <h4>Key features / highlights</h4>
-            <ul>
-              <li>Move and game state detection</li>
-              <li>Robotic move execution</li>
-            </ul>
-          </div>
+  <section class="project-details">
+    <div class="project-overview">
+      <h4>Overview</h4>
+      <p>
+        This dissertation investigated how compliance could be integrated into an existing 3RRRR spatial parallel manipulator by replacing traditional revolute joints with flexure-based joints.
+        The work focused on implementing the Compliant Rolling Contact Element (CORE) into the manipulator, optimizing the flexure geometry through theory and finite element analysis,
+        and validating the final concept through a 3D-printed prototype and load testing. The study combined CAD design, stress analysis, inverse kinematics, and experimental evaluation
+        to assess stiffness, torque resistance, workspace, and load-dependent behavior.
+      </p>
+    </div>
 
-          <div class="project-tech">
-            <h4>Tech & tools</h4>
-            <ul class="tech-list" aria-label="Technologies used">
-              <li>ROS2 Humble</li>
-              <li>Python</li>
-              <li>OpenCV</li>
-              <li>Raspberry Pi</li>
-            </ul>
-          </div>
+    <div class="project-features">
+      <h4>Key features / highlights</h4>
+      <ul>
+        <li>Novel compliant 3RRRR spatial parallel manipulator</li>
+        <li>CORE flexure joints with bending range above 180°</li>
+        <li>3-limb parallel manipulator architecture</li>
+        <li>Approx. 184 mm platform equilibrium height</li>
+        <li>3D-printed PLA prototype with guided rail system</li>
+        <li>FEA- and theory-driven flexure optimization</li>
+      </ul>
+    </div>
 
-          <div class="project-role">
-            <h4>My role</h4>
-            <p>Designed and coded the project package and integrated vision + manipulation pipeline.</p>
-          </div>
+    <div class="project-tech">
+      <h4>Tech &amp; tools</h4>
+      <ul class="tech-list" aria-label="Technologies used">
+        <li>Autodesk Inventor</li>
+        <li>Finite Element Analysis (FEA)</li>
+        <li>MATLAB</li>
+        <li>Inverse kinematics modelling</li>
+        <li>PLA 3D printing</li>
+        <li>Bambu Lab P1P</li>
+        <li>Bernoulli-Euler beam theory</li>
+        <li>Stress and stiffness analysis</li>
+        <li>Experimental torque validation</li>
+        <li>MG996R servo motor testing</li>
+      </ul>
+    </div>
 
+    <div class="project-role">
+      <h4>My role</h4>
+      <ul>
+        <li>Designed the compliant joint and manipulator CAD architecture</li>
+        <li>Integrated CORE flexure joints into an existing 3RRRR parallel manipulator concept</li>
+        <li>Performed finite element analysis to evaluate stress distribution across candidate materials</li>
+        <li>Derived stiffness and torque relationships using analytical modelling</li>
+        <li>Implemented inverse kinematics and workspace analysis in MATLAB</li>
+        <li>Built and experimentally tested a 3D-printed prototype under load conditions</li>
+      </ul>
+    </div>
+  </section>
 
-        </section>
-
-        <footer class="project-footer" aria-hidden="false">
-          <p class="project-stats">Duration: 3 months • Team: 3 • Status: Active</p>
-        </footer>
-      </article>
+  <footer class="project-footer" aria-hidden="false">
+    <p class="project-stats">Duration: 4 months • Type: Individual dissertation • Status: Completed</p>
+  </footer>
+</article>
 
       </article>
     </section>
@@ -1057,6 +1072,7 @@
   </script>
 </body>
 </html>
+
 
 
 
