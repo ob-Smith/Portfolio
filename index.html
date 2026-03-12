@@ -65,7 +65,7 @@
       </h2>
 
       <h3>
-        Engineer / Sales 
+        Engineering / Sales 
       </h3>
       
       <ul class="about-bullets">
@@ -96,11 +96,6 @@
 
   </section>
 </section>
-
-
-
-
-
 
 <!-- ABOUT -->
 <section id="about" class="route-section" data-route hidden>
@@ -303,86 +298,87 @@
   </footer>
 </article>
       
-      <!-- Project 3 -->
-      <article class="project route-focus-target" tabindex="-1" data-route-focus aria-labelledby="project-title-vtol" data-project-id="vtol-drone" itemscope itemtype="https://schema.org/CreativeWork">
-        <header class="project-header">
-          <h2 id="project-title-vtol" class="project-title" itemprop="name">360° Magnetic Robot</h2>
-          <p class="project-meta">
-            <time class="project-date" datetime="2023-01-01" itemprop="datePublished">Jan 2023 - Apr 2023</time>
-            <span class="project-role" itemprop="author">• Designer</span>
-            <span class="project-tags">• <span itemprop="keywords">Robot, Mechanical, Magnetic</span></span>
-          </p>
-          <p class="project-summary" itemprop="description">
-            Prototype 360° inclination capable robot for weld-shaving on navy hulls
-          </p>
-        </header>
-
+      <!-- Project 3 SMART BIN -->
+      <article class="project route-focus-target" tabindex="-1" data-route-focus aria-labelledby="project-title-smart-bin" data-project-id="smart-bin" itemscope itemtype="https://schema.org/CreativeWork">
+      <header class="project-header">
+        <h2 id="project-title-smart-bin" class="project-title" itemprop="name">Smart Bin</h2>
+        <p class="project-meta">
+          <time class="project-date" datetime="2023-11-01" itemprop="datePublished">Nov 2023</time>
+          <span class="project-role" itemprop="author">• Designer</span>
+          <span class="project-tags">• <span itemprop="keywords">Robotics, Embedded Systems, Arduino, Mechatronics</span></span>
+        </p>
+        <p class="project-summary" itemprop="description">
+          Miniature automated bin prototype that detects an approaching hand and opens its lid using an ultrasonic sensor and servo motor.
+        </p>
+      </header>
+    
         <figure class="project-media">
           <video controls muted playsinline width="100%">
-            <source src="assets/pictures/robot_araseurmp4.mp4" type="video/mp4">
+            <source src="assets/pictures/smart_bin.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <figcaption>Magnetic Robot Prototype Test</figcaption>
+          <figcaption>Smart Bin Prototype Test</figcaption>
         </figure>
+    
+      <section class="project-details">
+        <div class="project-overview">
+          <h4>Overview</h4>
+          <p>
+            Designed and built a miniature smart bin capable of automatically opening when a hand is detected nearby.
+            The system uses an ultrasonic sensor to measure distance, a servo motor to actuate the lid, and an LCD
+            interface to display the operating state of the bin. The prototype cycles through idle, open, and closed
+            modes, with a countdown shown before automatic closure.
+          </p>
+        </div>
 
-        <section class="project-details">
-          <div class="project-overview">
-            <h4>Overview</h4>
-            <p>
-              Design and production of a magnetic robot that can be placed on ships to shave off excessive welding.
-              The magnet's strength can be adjusted to the ship's magnetic field. Once positioned it
-              can be controlled via smartphone. Speeds are configurable and range extends beyond 100m.
-              While a lot of progress was made, the project was passed onto following-year students due to a lack of time.
-            </p>
-          </div>
-
-          <div class="project-features">
-            <h4>Key features / highlights</h4>
-            <ul>
-              <li>Magnetic adhesion robot for steel ship hulls</li>
-              <li>Approx. 20 kg robot mass</li>
-              <li>Dual-wheel drive + rear support skid mobility system</li>
-              <li>DOGA geared motors delivering ~20 Nm torque per wheel</li>
-              <li>3-axis SMA (Support Multi-Axes) grinding platform</li>
-              <li>Grinding tool mounted in plug-and-play removable system</li>
-              <li>Magnetic adhesion system with ~120 kg holding force magnets</li>
-            </ul>
-          </div>
-
-          <div class="project-tech">
-            <h4>Tech & tools</h4>
-            <ul class="tech-list" aria-label="Technologies used">
-              <li>Autodesk Inventor (CAD design)</li>
-              <li>Arduino microcontrollers (motor control and sensors)</li>
-              <li>Raspberry Pi (central processing and communication)</li>
-              <li>OpenCV (computer vision and camera interface)</li>
-              <li>Lidar & dual camera system for environment perception</li>
-              <li>DC geared motors (DOGA) for robot locomotion</li>
-              <li>Linear actuators for SMA motion control</li>
-              <li>Magnetic adhesion system (R-60-06-30-N magnets)</li>
-              <li>Force, temperature and orientation sensors</li>
-              <li>C / C++ programming for robot control and interface</li>
-            </ul>
-          </div>
-
-          <div class="project-role">
-            <h4>My role</h4>
-              <ul>
-                <li>Dimensioned and selected DC geared motors for the robot mobility system</li>
-                <li>Calculated traction force, torque and power requirements for movement on vertical steel hulls</li>
-                <li>Designed and validated the wheel–motor drivetrain configuration</li>
-                <li>Contributed to the mechanical architecture and subsystem integration of the robot</li>
-                <li>Collaborated with electronics and software teams to ensure system-level compatibility</li>
-              </ul>
-          </div>
-        </section>
-
-        <footer class="project-footer" aria-hidden="false">
-          <p class="project-stats">Duration: 4 months • Team: 5 • Status: Inactive</p>
-        </footer>
+      <figure class="project-media">
+        <img src="assets/pictures/smart_bin_diagram.jpg" alt="Smart Bin prototype with ultrasonic sensor and LCD display" itemprop="image" />
+        <figcaption>Electronics</figcaption>
+      </figure>
+    
+        <div class="project-features">
+          <h4>Key features / highlights</h4>
+          <ul>
+            <li>Automatic lid opening via ultrasonic hand detection</li>
+            <li>Detection threshold set below 2 cm</li>
+            <li>90° servo-driven opening mechanism</li>
+            <li>3-state LCD interface: Idle / Open / Closed</li>
+            <li>Countdown display before automatic closing</li>
+            <li>Compact tabletop prototype</li>
+          </ul>
+        </div>
+    
+        <div class="project-tech">
+          <h4>Tech &amp; tools</h4>
+          <ul class="tech-list" aria-label="Technologies used">
+            <li>Arduino Uno</li>
+            <li>Ultrasonic sensor</li>
+            <li>Servo motor</li>
+            <li>16x2 LCD display</li>
+            <li>Embedded wiring and breadboard prototyping</li>
+            <li>Arduino programming</li>
+            <li>Circuit schematic design</li>
+          </ul>
+        </div>
+    
+        <div class="project-role">
+          <h4>My role</h4>
+          <ul>
+            <li>Designed and built the full smart bin prototype</li>
+            <li>Integrated the ultrasonic sensor, servo motor, and LCD display</li>
+            <li>Programmed the opening, countdown, and closing logic</li>
+            <li>Defined the three user-interface states: Idle, Open, and Closed</li>
+            <li>Produced the circuit schematic and assembled the embedded electronics</li>
+          </ul>
+        </div>
+      </section>
+    
+      <footer class="project-footer" aria-hidden="false">
+        <p class="project-stats">Duration: 2 months • Status: Prototype • Date: Nov 2023</p>
+      </footer>
+    
       </article>
-
-      <!-- Project 2 -->
+      <!-- Project 4 COMPLIANT ROBOT  -->
       <article class="project" aria-labelledby="project-title-ttt" data-project-id="tic-tac-toe-robot" itemscope itemtype="https://schema.org/CreativeWork">
         <header class="project-header">
           <h2 id="project-title-ttt" class="project-title" itemprop="name">Tic-tac-toe Robot Opponent</h2>
@@ -397,10 +393,13 @@
         </header>
 
         <figure class="project-media">
-          <img src="https://s3.amazonaws.com/gc-p/screenshots/pics/465b57f06801df8e591611b013b7d2a5/large.jpg" alt="CAD render of the OpenMANIPULATOR-X assembly" itemprop="image" />
-          <figcaption>3 Axis Robot CAD assembly</figcaption>
+          <video controls muted playsinline width="100%">
+            <source src="assets/pictures/mecatrobot.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Project Presentation Video</figcaption>
         </figure>
-
+        
         <section class="project-details">
           <div class="project-overview">
             <h4>Overview</h4>
@@ -1058,6 +1057,7 @@
   </script>
 </body>
 </html>
+
 
 
 
