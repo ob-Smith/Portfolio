@@ -517,6 +517,10 @@ article.project {
   border-radius: var(--radius-lg);
 }
 
+.project-title:hover {
+  color: #3b82f6;
+}
+
 .project-header { display: grid; gap: 6px; }
 .project-title { font-size: 1.45rem; font-weight: 750; }
 .project-meta {
