@@ -916,12 +916,6 @@ code, pre { font-family: var(--mono); color: var(--text); }
   height: auto;
 }
 
-.project-media-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;   /* space between video and image */
-}
-
 /* ---------------------------
    MOBILE MODE
    --------------------------- */
