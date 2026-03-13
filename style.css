@@ -213,6 +213,11 @@ article.project {
   margin-right: auto;
 }
 
+.about-section ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
 /* Theme-aware “card” surface */
 .card-surface,
 .about-section,
