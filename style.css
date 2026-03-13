@@ -517,6 +517,26 @@ body.menu-open { overflow-x: hidden; }
   color: var(--text);
 }
 
+.languages-banner {
+  margin-top: 22px;
+  padding: 14px 18px;
+  border-radius: 14px;
+
+  text-align: center;
+  font-weight: 750;
+  letter-spacing: 0.06em;
+
+  color: var(--on-accent);
+
+  background: linear-gradient(
+    135deg,
+    var(--accent),
+    var(--accent-2)
+  );
+
+  box-shadow: var(--shadow-soft);
+}
+
 /* ---------------------------
    9) Projects
    --------------------------- */
