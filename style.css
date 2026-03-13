@@ -1000,4 +1000,8 @@ code, pre { font-family: var(--mono); color: var(--text); }
     top: 10px;
     right: var(--gutter);
   }
+
+   article.project .project-title {
+     color: #3b82f6 !important;
+   }
 }
