@@ -899,6 +899,23 @@ code, pre { font-family: var(--mono); color: var(--text); }
   border-radius: 14px;
 }
 
+.project-media-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-media-stack .project-media {
+  margin: 0;
+}
+
+.project-media-stack img,
+.project-media-stack video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* ---------------------------
    MOBILE MODE
    --------------------------- */
